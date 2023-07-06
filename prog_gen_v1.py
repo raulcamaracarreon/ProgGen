@@ -131,9 +131,14 @@ for i in range(num_acordes - 1):
         progresion.append(siguiente_acorde)
 
 # Muestra la progresión generada.
-st.write('Progresión de acordes generada: ' + '-'.join(progresion))
+st.write("Progresión generada:")
+st.write("")
+progresion = '-'.join(progresion)
+st.markdown(f'## **{progresion}**')
 
-
+st.write("")
+st.write("")
+st.write("")
 info_readme = """
 # Generador de Acordes Mágico
 
@@ -166,5 +171,5 @@ Para utilizar la aplicación, sigue estos pasos:
 ¡Disfruta de la música!
 """
 
-if st.button('Encuentra las 7 llaves'):
+if st.button('Acerca de esta app'):
     st.markdown(info_readme, unsafe_allow_html=True)
